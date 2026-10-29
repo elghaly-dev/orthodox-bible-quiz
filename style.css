@@ -1,0 +1,18 @@
+:root { --bg: #faf7f2; --fg: #222; --accent: #7a1f2b; --ok: #1f6f3a; --bad: #a12626; --card: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem; max-width: 40rem; margin: 0 auto; }
+h1 { font-size: 1.4rem; margin: 0; color: var(--accent); }
+main { max-width: 40rem; margin: 0 auto; padding: 0 1rem; }
+.card { background: var(--card); border-radius: 12px; padding: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+h2 { font-size: 1.2rem; }
+button { font: inherit; cursor: pointer; border-radius: 8px; border: 1px solid #ccc; background: #fff; padding: .6rem 1rem; }
+button.primary { background: var(--accent); color: #fff; border-color: var(--accent); margin-top: 1rem; }
+#options { display: grid; gap: .5rem; }
+.option { text-align: start; width: 100%; }
+.option.correct { background: #e3f3e8; border-color: var(--ok); color: var(--ok); font-weight: 600; }
+.option.wrong { background: #f8e3e3; border-color: var(--bad); color: var(--bad); }
+.option:disabled { cursor: default; opacity: 1; }
+.muted { color: #666; font-size: .95rem; }
+.score { font-size: 2rem; font-weight: 700; color: var(--accent); }
+footer { text-align: center; color: #888; padding: 2rem 1rem; }
