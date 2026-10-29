@@ -1,0 +1,10 @@
+{
+  "name": "orthodox-bible-quiz",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test"
+  }
+}
